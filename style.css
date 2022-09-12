@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Luckiest+Guy&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    touch-action: none;
+    user-zoom: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#333,#111);
+    user-select: none;
+    overflow: hidden;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 30px black;
+    top: 0;
+    left: 0;
+ }
+
+.score{
+    font-family: 'Luckiest Guy', cursive;
+    position: absolute;
+    font-size: 5rem;
+    right: 10px;
+    top: 10px;
+    color: limegreen;
+    font-weight: bold;
+    opacity: 0.5;
+    z-index: 98;
+
+}
+
+.labelScore{
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 400;
+    left: 50px;
+    top: 50px;
+    color: white;
+    font-family: 'Cookie', cursive;
+}
+
+.container{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    z-index: 99;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 0px 15px limegreen;
+}
+
+button{
+    outline: none;
+    border: none;
+
+}
+
+.container button{
+    position: absolute;
+    border: 3px solid limegreen;
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+    padding:10px;
+    background-color: lightgreen;
+    color: green;
+    bottom: 5px;
+    font-family: 'Luckiest Guy', cursive;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.container button:active{
+    background-color: limegreen;
+    color: lightgreen;
+}
+
+
+.container strong{
+    font-size: 5rem;
+    color: limegreen;
+    margin-top: 50px;
+}
